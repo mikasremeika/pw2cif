@@ -1,4 +1,4 @@
-# pw2cif
+﻿# pw2cif
 Convert Quantum Espresso VC-relax output to a CIF file. 
 
 Process Quantum Espresso pw.x output file into a CIF file. 
@@ -14,6 +14,6 @@ Input parameters:
  
 Which atomic positions to process: -sf (start and final) -int (intermediate).
 Intermediate positions do not include start and final positions.
-All positions will be written into one CIF file, labeles accordingly. 
+All positions will be written into one CIF file, labeled accordingly. 
 
-pw.x output file (captuted output to stdout). 
+pw.x output file (captured output to stdout). 
