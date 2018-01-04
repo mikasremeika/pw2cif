@@ -3,7 +3,7 @@ Convert Quantum Espresso VC-relax output to a CIF file.
 
 Process Quantum Espresso pw.x output file into a CIF file. 
 
-Ported from perl script qe2cif.pl by Alexandr Fonari
+Ported from perl script qe2cif.pl by Alexandr Fonari. 
 Updated to read atomic positions from current version of QE pw.x output file. 
 
 Author: mikas.remeika@bk.tsukuba.ac.jp
