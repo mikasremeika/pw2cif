@@ -18,21 +18,21 @@
 #
 # pw.x output file (captuted output to stdout). 
 
-import argparse # command line arguments 
-import re # regex
+import argparse 
+import re 
 import math
 import cmath
 import numpy as np
 
 def print_cif_header(a, b, c, alpha, beta, gamma, data_title):
-    f_out.write("\n\ndata_"+data_title+"\n")
+    f_out.write("\n\ndata_{}\n".format(data_title))
     f_out.write("\n")
-    f_out.write("_cell_length_a     "+'{:16.14f}'.format(a)+"\n")
-    f_out.write("_cell_length_b     "+'{:16.14f}'.format(b)+"\n")
-    f_out.write("_cell_length_c     "+'{:16.14f}'.format(c)+"\n")
-    f_out.write("_cell_angle_alpha  "+'{:16.14f}'.format(alpha)+"\n")
-    f_out.write("_cell_angle_beta   "+'{:16.14f}'.format(beta)+"\n")
-    f_out.write("_cell_angle_gamma  "+'{:16.14f}'.format(gamma)+"\n")
+    f_out.write("_cell_length_a     {:16.14f}\n".format(a))
+    f_out.write("_cell_length_b     {:16.14f}\n".format(b))
+    f_out.write("_cell_length_c     {:16.14f}\n".format(c))
+    f_out.write("_cell_angle_alpha  {:16.14f}\n".format(alpha))
+    f_out.write("_cell_angle_beta   {:16.14f}\n".format(beta))
+    f_out.write("_cell_angle_gamma  {:16.14f}\n".format(gamma))
     f_out.write("\n")
     f_out.write("loop_\n")
     f_out.write("_space_group_symop_id\n")
