@@ -104,12 +104,7 @@ def read_if_positions(): # read initial or final positions
                 u = np.dot(atom, np.cross(b_vect,c_vect))/omega
                 v = np.dot(atom, np.cross(c_vect,a_vect))/omega
                 w = np.dot(atom, np.cross(a_vect,b_vect))/omega
-                f_out.write(el_name
-                            +" "'{:16.10f}'.format(u)
-                            +" "'{:16.10f}'.format(v)
-                            +" "'{:16.10f}'.format(w)
-                            +"\n"
-                )
+                f_out.write("{} {:16.10f} {:16.10f} {:16.10f}\n".format(el_name,u,v,w))
 
 def read_int_positions(): # read intermediate positions 
     n_structures = 0
@@ -161,12 +156,7 @@ def read_int_positions(): # read intermediate positions
                 u = np.dot(atom, np.cross(b_vect,c_vect))/omega
                 v = np.dot(atom, np.cross(c_vect,a_vect))/omega
                 w = np.dot(atom, np.cross(a_vect,b_vect))/omega
-                f_out.write(el_name
-                            +" "'{:16.10f}'.format(u)
-                            +" "'{:16.10f}'.format(v)
-                            +" "'{:16.10f}'.format(w)
-                            +"\n"
-                )
+                f_out.write("{} {:16.10f} {:16.10f} {:16.10f}\n".format(el_name,u,v,w))
 
 # constants 
 BOHR = 0.52917721092 # Bohr radius, units of 10 nm 
